@@ -159,11 +159,3 @@ class MiniCourt():
     
     def get_court_drawing_keypoints(self):
         return self.drawing_key_points
-
-        for frame_num, frame in enumerate(frames):
-            for _, position in postions[frame_num].items():
-                x,y = position
-                x= int(x)
-                y= int(y)
-                cv2.circle(frame, (x,y), 5, color, -1)
-        return frames
